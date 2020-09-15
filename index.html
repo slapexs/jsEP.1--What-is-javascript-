@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EP.1 What is Javascript?</title>
+  </head>
+  <body>
+    <h1 id="text">Unclick</h1>
+    <button id="btn">Button</button>
+
+    <hr />
+    <button id="btnAlert">Alert !!</button>
+
+    <!-- Javascript -->
+    <script>
+      const text = document.getElementById("text");
+      const btn = document.getElementById("btn");
+      const btnAlert = document.getElementById("btnAlert");
+
+      function changeText() {
+        text.innerHTML = "Clicked";
+      }
+
+      function alertText() {
+        alert("ALERT !!!");
+      }
+
+      btn.addEventListener("click", changeText);
+      btnAlert.addEventListener("click", alertText);
+    </script>
+  </body>
+</html>
